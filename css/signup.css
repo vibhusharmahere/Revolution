@@ -1,0 +1,107 @@
+*{
+  box-sizing: border-box;
+} 
+
+ body{
+    --main-color: #283526;
+    --primary-color:#888888;
+    --button-background:#2083F6;
+    --primary-button-background:#fe7649;
+    --background-color:#e2efff;
+}
+/* ..........................left side css style.......................... */
+form{
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.8rem;
+}
+.signup{
+  width: 50%;
+  padding: 0 12.5rem;
+  margin-top: 5rem;
+  
+}
+.signup h1{
+  width: 34.375rem;
+    font-size: 4rem;
+    line-height: 4.7rem;
+    
+    text-transform: capitalize;
+}
+
+.box input[type = "email"], .box input[type = "password"]{
+  padding: 12px;
+  margin-top: 1rem;
+  outline: none;
+  border:none;
+  border-bottom: 1px solid black;
+  font-size: large;
+}
+
+.box input[type = "submit"] {
+  padding: 12px;
+  margin-top: 1rem;
+  outline: none;
+  border: none;
+  background-color: var(--button-background);
+  color: #fff;
+  margin-bottom: 1rem;
+  border-radius: 1.4rem;
+  transition:0.2s;
+  font-size: large;
+}
+
+.box input[type = "submit"]:hover{
+  cursor: pointer;
+  background-color: rgb(236, 232, 232);
+  color: var(--button-background);
+}
+
+#already{
+  color: #2083F6;
+}
+#already:hover{
+  text-decoration:underline;
+}
+
+.terms{
+  display: flex;
+  margin-top: 1rem;
+  align-items: flex-start;
+}
+#tnc{
+  margin-top: 7px;
+
+}
+
+
+/* ...........................whole section............................ */
+.sec{
+  
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ..........................right side css style........................... */
+.sec .right-cont{
+  width: 50%;
+  
+    height: 100vh;
+    background: var(--background-color);
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 90px 0px 0px 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.sec .right-cont img{
+  
+    height: 30.25rem;
+    margin-right: 15rem;
+}
